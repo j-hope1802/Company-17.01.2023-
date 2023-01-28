@@ -1,0 +1,17 @@
+namespace Domain.Entities;
+
+public class Company
+{
+    public int Id { get; set; }
+    public string? Name { get; set; }
+    public List<User> Users { get; set; } 
+    public Company()
+    {
+        
+    }
+    public Company(int id, string name)
+    {
+        Id = id;
+        Name = name;
+    }
+}
